@@ -5,7 +5,7 @@ public class UserRegistration {
 
     Scanner scanner = new Scanner(System.in);
 
-    public static final String PASSWORDPATTERN = "^(?=.*[A-Z])[0-9a-zA-Z@$!%*#?&]{8,}$";
+    public static final String PASSWORDPATTERN = "^(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9@$!%*#?&]{6,}$";
 
     public static void main(String[] args) {
         UserRegistration userRegistration = new UserRegistration();
