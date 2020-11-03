@@ -5,7 +5,7 @@ public class UserRegistration {
 
     Scanner scanner = new Scanner(System.in);
 
-    public static final String NUMBERPATTERN = "^[\+0-9]{3}[ ]?[0-9]{10}$";
+    public static final String PASSWORDPATTERN = "[0-9a-zA-Z@$!%*#?&]{8,}";
 
     public static void main(String[] args) {
         UserRegistration userRegistration = new UserRegistration();
@@ -13,8 +13,8 @@ public class UserRegistration {
     }
     private void readInput() {
         System.out.println("Enter Phone Number ");
-        String PhoneNumber = scanner.next();
-        validateInput(NUMBERPATTERN,PhoneNumber);
+        String Password = scanner.next();
+        validateInput(PASSWORDPATTERN,Password);
     }
 
     private void validateInput(String pattern, String input) {
