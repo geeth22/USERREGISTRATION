@@ -1,3 +1,251 @@
+/*  User Registration System needs to ensure all validations are in place during the User Entry  */
+
+
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class UserRegistration {
+
+    Scanner scanner = new Scanner(System.in);
+
+    public static final String NAMEPATTERN = "[A-Z][A-Za-z]{2,}";
+
+    public static void main(String[] args) {
+        UserRegistration userRegistration = new UserRegistration();
+        userRegistration.readInput();
+    }
+    private void readInput() {
+        System.out.println("Enter first name ");
+        String firstName = scanner.next();
+        validateInput(NAMEPATTERN,firstName);
+    }
+
+    private void validateInput(String pattern, String input) {
+
+        if(Pattern.matches(pattern, input)) {
+            System.out.println("Valid");
+        }
+        else {
+            System.out.println("Invalid");
+        }
+    }
+}
+
+
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class UserRegistration {
+
+    Scanner scanner = new Scanner(System.in);
+
+    public static final String NAMEPATTERN = "[A-Z][A-Za-z]{2,}";
+
+    public static void main(String[] args) {
+        UserRegistration userRegistration = new UserRegistration();
+        userRegistration.readInput();
+    }
+    private void readInput() {
+        System.out.println("Enter last name ");
+        String lastName = scanner.next();
+        validateInput(NAMEPATTERN,lastName);
+    }
+
+    private void validateInput(String pattern, String input) {
+
+        if(Pattern.matches(pattern, input)) {
+            System.out.println("Valid");
+        }
+        else {
+            System.out.println("Invalid");
+        }
+    }
+}
+
+
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class UserRegistration {
+
+    Scanner scanner = new Scanner(System.in);
+
+    public static final String EMAILPATTERN = "([0-9A-Za-z])+([-+._][0-9A-Za-z]+)*" + "@([0-9A-Za-z])+[.]([a-zA-Z])+([.][A-Za-z]+)*";
+
+    public static void main(String[] args) {
+        UserRegistration userRegistration = new UserRegistration();
+        userRegistration.readInput();
+    }
+    private void readInput() {
+        System.out.println("Enter email id ");
+        String EmailId = scanner.next();
+        validateInput(EMAILPATTERN,EmailId);
+    }
+
+    private void validateInput(String pattern, String input) {
+
+        if(Pattern.matches(pattern, input)) {
+            System.out.println("Valid");
+        }
+        else {
+            System.out.println("Invalid");
+        }
+    }
+}
+
+
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class UserRegistration {
+
+    Scanner scanner = new Scanner(System.in);
+
+    public static final String NUMBERPATTERN = "^[\+0-9]{3}[ ]?[0-9]{10}$";
+
+    public static void main(String[] args) {
+        UserRegistration userRegistration = new UserRegistration();
+        userRegistration.readInput();
+    }
+    private void readInput() {
+        System.out.println("Enter Phone Number ");
+        String PhoneNumber = scanner.next();
+        validateInput(NUMBERPATTERN,PhoneNumber);
+    }
+
+    private void validateInput(String pattern, String input) {
+
+        if(Pattern.matches(pattern, input)) {
+            System.out.println("Valid");
+        }
+        else {
+            System.out.println("Invalid");
+        }
+    }
+}
+
+
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class UserRegistration {
+
+    Scanner scanner = new Scanner(System.in);
+
+    public static final String PASSWORDPATTERN = "[0-9a-zA-Z@$!%*#?&]{8,}";
+
+    public static void main(String[] args) {
+        UserRegistration userRegistration = new UserRegistration();
+        userRegistration.readInput();
+    }
+    private void readInput() {
+        System.out.println("Enter Phone Number ");
+        String Password = scanner.next();
+        validateInput(PASSWORDPATTERN,Password);
+    }
+
+    private void validateInput(String pattern, String input) {
+
+        if(Pattern.matches(pattern, input)) {
+            System.out.println("Valid");
+        }
+        else {
+            System.out.println("Invalid");
+        }
+    }
+}
+
+
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class UserRegistration {
+
+    Scanner scanner = new Scanner(System.in);
+
+    public static final String PASSWORDPATTERN = "^(?=.*[A-Z])[0-9a-zA-Z@$!%*#?&]{8,}$";
+
+    public static void main(String[] args) {
+        UserRegistration userRegistration = new UserRegistration();
+        userRegistration.readInput();
+    }
+    private void readInput() {
+        System.out.println("Enter Phone Number ");
+        String Password = scanner.next();
+        validateInput(PASSWORDPATTERN,Password);
+    }
+
+    private void validateInput(String pattern, String input) {
+
+        if(Pattern.matches(pattern, input)) {
+            System.out.println("Valid");
+        }
+        else {
+            System.out.println("Invalid");
+        }
+    }
+}
+
+
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class UserRegistration {
+
+    Scanner scanner = new Scanner(System.in);
+
+    public static final String PASSWORDPATTERN = "^(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9@$!%*#?&]{6,}$";
+
+    public static void main(String[] args) {
+        UserRegistration userRegistration = new UserRegistration();
+        userRegistration.readInput();
+    }
+    private void readInput() {
+        System.out.println("Enter Phone Number ");
+        String Password = scanner.next();
+        validateInput(PASSWORDPATTERN,Password);
+    }
+
+    private void validateInput(String pattern, String input) {
+
+        if(Pattern.matches(pattern, input)) {
+            System.out.println("Valid");
+        }
+        else {
+            System.out.println("Invalid");
+        }
+    }
+}
+
+
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class UserRegistration {
+
+    Scanner scanner = new Scanner(System.in);
+
+    public static final String PASSWORDPATTERN = ^(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*#?&])[A-Za-z0-9@$!%*?&]{5,}$";
+    public static void main(String[] args) {
+        UserRegistration userRegistration = new UserRegistration();
+        userRegistration.readInput();
+    }
+    private void readInput() {
+        System.out.println("Enter Phone Number ");
+        String Password = scanner.next();
+        validateInput(PASSWORDPATTERN,Password);
+    }
+    private void validateInput(String pattern, String input) {
+        if(Pattern.matches(pattern, input)) {
+            System.out.println("Valid");
+        }
+        else {
+            System.out.println("Invalid");
+        }
+    }
+}
+
+
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 
